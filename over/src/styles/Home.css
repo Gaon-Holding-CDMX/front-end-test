@@ -48,4 +48,17 @@
     font-size: 16px;
     cursor: pointer;
   }
-  
+
+  .paragraph {
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: xx-large;
+    color: black;
+  }
+
+  .title {
+    width: 55%;
+    height: 50%; 
+    margin: 0 auto;
+  }

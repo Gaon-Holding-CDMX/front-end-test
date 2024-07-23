@@ -18,6 +18,7 @@ import SupermanTitle from '../images/Titulos/Superman.png';
 import BatmanTitle from '../images/Titulos/Batman.png';
 import FlashTitle from '../images/Titulos/Flash.png';
 import JokerTitle from '../images/Titulos/Joker.png';
+import LexTitle from '../images/Titulos/Lex.png';
 import { ThemeContext } from '../App';
 
 const Roles = () => {
@@ -37,7 +38,7 @@ const Roles = () => {
       { original: Joker, hover: JokerHover },
       { original: ReverseFlash, hover: ReverseFlashHover },
     ];
-    titles = [JokerTitle, JokerTitle, JokerTitle];
+    titles = [LexTitle, JokerTitle, FlashTitle];
   } else {
     images = [
       { original: Superman, hover: SupermanHover },
@@ -51,6 +52,7 @@ const Roles = () => {
     <div id={theme}>
       <div className='background'>
         <div className="three-image-container">
+          
           {images.map((image, index) => (
             <div
               key={index}

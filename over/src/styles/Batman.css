@@ -1,6 +1,17 @@
+h1 {
+  font-family: 'Oswald', sans-serif;
+}
+
+p {
+  font-family: 'Oswald', sans-serif;
+  font-size: 18px; 
+}
+
 .split-layout {
   display: flex;
   height: 100vh;
+  position: relative;
+  overflow: hidden; 
 }
 
 .image-container2 {
@@ -21,56 +32,64 @@
   justify-content: center;
 }
 
-#heroe .text-container{
+#heroe .text-container {
   background-color: #ececec;
   color: #000000;
 }
 
-#villain .text-container{
+#villain .text-container {
   background-color: #000000;
   color: #ffffff;
 }
 
 .slide-left-enter {
+  position: absolute;
+  width: 100%;
   opacity: 0;
-  transform: translateX(100%);
+  transform: translateX(100%) scale(0.9);
 }
 
 .slide-left-enter-active {
   opacity: 1;
-  transform: translateX(0);
+  transform: translateX(0) scale(1);
   transition: opacity 500ms, transform 500ms;
 }
 
 .slide-left-exit {
+  position: absolute;
+  width: 100%;
   opacity: 1;
-  transform: translateX(0);
+  transform: translateX(0) scale(1);
 }
 
 .slide-left-exit-active {
   opacity: 0;
-  transform: translateX(-100%);
+  transform: translateX(-100%) scale(0.9);
   transition: opacity 500ms, transform 500ms;
 }
 
 .slide-right-enter {
+  position: absolute;
+  width: 100%;
   opacity: 0;
-  transform: translateX(-100%);
+  transform: translateX(-100%) scale(0.9);
 }
 
 .slide-right-enter-active {
   opacity: 1;
-  transform: translateX(0);
+  transform: translateX(0) scale(1);
   transition: opacity 500ms, transform 500ms;
 }
 
 .slide-right-exit {
+  position: absolute;
+  width: 100%;
   opacity: 1;
-  transform: translateX(0);
+  transform: translateX(0) scale(1);
 }
 
 .slide-right-exit-active {
   opacity: 0;
-  transform: translateX(100%);
+  transform: translateX(100%) scale(0.9);
   transition: opacity 500ms, transform 500ms;
 }
