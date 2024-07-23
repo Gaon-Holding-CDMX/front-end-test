@@ -1,0 +1,86 @@
+.flash-split-layout {
+  display: flex;
+  height: 100vh;
+  position: relative;
+  overflow: hidden; 
+}
+
+.flash-image-container {
+  flex: 1;
+}
+
+.flash-image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.flash-text-container {
+  flex: 2;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#heroe .flash-text-container {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+#villain .flash-text-container {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.flash-zoom-in-left-enter {
+  position: absolute;
+  width: 100%;
+  opacity: 0;
+  transform: translateX(100%) scale(0.9);
+}
+
+.flash-zoom-in-left-enter-active {
+  opacity: 1;
+  transform: translateX(0) scale(1);
+  transition: opacity 300ms, transform 300ms;
+}
+
+.flash-zoom-in-left-exit {
+  position: absolute;
+  width: 100%;
+  opacity: 1;
+  transform: translateX(0) scale(1);
+}
+
+.flash-zoom-in-left-exit-active {
+  opacity: 0;
+  transform: translateX(-100%) scale(0.9);
+  transition: opacity 300ms, transform 300ms;
+}
+
+.flash-zoom-in-right-enter {
+  position: absolute;
+  width: 100%;
+  opacity: 0;
+  transform: translateX(-100%) scale(0.9);
+}
+
+.flash-zoom-in-right-enter-active {
+  opacity: 1;
+  transform: translateX(0) scale(1);
+  transition: opacity 300ms, transform 300ms;
+}
+
+.flash-zoom-in-right-exit {
+  position: absolute;
+  width: 100%;
+  opacity: 1;
+  transform: translateX(0) scale(1);
+}
+
+.flash-zoom-in-right-exit-active {
+  opacity: 0;
+  transform: translateX(100%) scale(0.9);
+  transition: opacity 300ms, transform 300ms;
+}

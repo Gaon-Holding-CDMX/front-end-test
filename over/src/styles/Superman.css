@@ -1,0 +1,86 @@
+.super-split-layout {
+  display: flex;
+  height: 100vh;
+  position: relative;
+  overflow: hidden; 
+}
+
+.super-image-container {
+  flex: 1;
+}
+
+.super-image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.super-text-container {
+  flex: 2;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#heroe .super-text-container {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+#villain .super-text-container {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.super-slide-left-enter {
+  position: absolute;
+  width: 100%;
+  opacity: 0;
+  transform: translateX(100%) scale(0.9);
+}
+
+.super-slide-left-enter-active {
+  opacity: 1;
+  transform: translateX(0) scale(1);
+  transition: opacity 500ms, transform 500ms;
+}
+
+.super-slide-left-exit {
+  position: absolute;
+  width: 100%;
+  opacity: 1;
+  transform: translateX(0) scale(1);
+}
+
+.super-slide-left-exit-active {
+  opacity: 0;
+  transform: translateX(-100%) scale(0.9);
+  transition: opacity 500ms, transform 500ms;
+}
+
+.super-slide-right-enter {
+  position: absolute;
+  width: 100%;
+  opacity: 0;
+  transform: translateX(-100%) scale(0.9);
+}
+
+.super-slide-right-enter-active {
+  opacity: 1;
+  transform: translateX(0) scale(1);
+  transition: opacity 500ms, transform 500ms;
+}
+
+.super-slide-right-exit {
+  position: absolute;
+  width: 100%;
+  opacity: 1;
+  transform: translateX(0) scale(1);
+}
+
+.super-slide-right-exit-active {
+  opacity: 0;
+  transform: translateX(100%) scale(0.9);
+  transition: opacity 500ms, transform 500ms;
+}
